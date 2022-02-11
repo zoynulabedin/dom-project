@@ -1,15 +1,21 @@
+
 window.onload = function() {
     main();
 }
 
+
+
+setInterval(main, 1000);
 function main() {
+
     let root = document.getElementById('root');
-    let button = document.getElementById('change-color');
-    button.addEventListener('click',function(){
-        root.style.backgroundColor = rgbColorGenerator();
-    })
-   
+   root.style.background = rgbColorGenerator();
+
+  
 }
+setInterval(count, 1000);
+
+
 
 function rgbColorGenerator() {
  let red =  Math.floor(Math.random() * 255);
@@ -18,3 +24,4 @@ function rgbColorGenerator() {
 
  return rgb = `rgb(${red}, ${green}, ${blue})`;
 }
+
