@@ -1,13 +1,15 @@
 window.onload = function() {
+    setInterval(main, 500);
     main();
 }
+
 
 function main() {
     let root = document.getElementById('root');
     let button = document.getElementById('change-color');
-    button.addEventListener('click',function(){
+    
         root.style.backgroundColor = genraterRgb();
-    });
+ 
 }
 
 function genraterRgb(){
